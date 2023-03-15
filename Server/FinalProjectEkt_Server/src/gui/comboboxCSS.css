@@ -1,0 +1,84 @@
+.combo-box-base  
+{
+	-fx-border-color: purple;
+	-fx-border-width: 3px;
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: linear-gradient(to bottom, #cfc8e6, #CBC3E3);
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-padding: 0;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+.combo-box .list-cell 
+{
+    -fx-background-color: linear-gradient(to bottom, #cfc8e6, #CBC3E3);
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 0 0 0 4;
+    -fx-cell-size: 2.5em; 
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+.combo-box-popup .list-view 
+{
+	-fx-background-color: linear-gradient(to bottom, #cfc8e6, #CBC3E3)
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}    
+
+.combo-box-popup .list-view .list-cell 
+{
+    -fx-padding: 4 0 4 5;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+    /* No alternate highlighting */
+    -fx-background-color: linear-gradient(to bottom, #cfc8e6, #CBC3E3);
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover 
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: indigo;
+    -fx-text-fill: -fx-selection-bar-text;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+	
+}
+
+.combo-box-base:hover
+{
+	-fx-background-color : #8678b3;
+    -fx-color: -fx-hover-base;
+	
+}
+
+.combo-box-base:showing 
+{
+	-fx-background-color: #CBC3E3;
+    -fx-color: -fx-pressed-base;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	
+}
+
+.combo-box-base:focused {
+    -fx-background-color: #CBC3E3;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}

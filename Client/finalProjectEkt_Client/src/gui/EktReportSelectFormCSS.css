@@ -1,0 +1,46 @@
+.tab-pane > .tab-header-area > .headers-region > .tab:top {
+    -fx-border-color: indigo;
+    -fx-border-radius: 5 5 0 0;
+    -fx-border-width: 1 1 5 1;   
+    -fx-background-color: FFB6C1;
+    -fx-pref-height: 35px;  
+    -fx-pref-width: 260px;
+    -fx-background-insets: 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected:top {
+    -fx-border-color: #4b0082 #4b0082 #a3a7a8 #4b0082;
+    -fx-border-width: 5 5 0 5;   
+    -fx-border-radius: 5 5 0 0;
+    -fx-background-color: transparent;
+    -fx-pref-height: 40px;  
+    -fx-background-insets: 0;
+    -fx-border-opacity: 0.7;
+}
+
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color:   linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent);
+    -fx-border-color: #a837b4;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-insets: 0;
+    -fx-pref-height: 45px;  
+}
+
+.tab-pane {
+	-fx-background-color:   linear-gradient(from -200px 0px to 0px 600px, #a837b4, transparent);
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SalesManagerController">
+	<children>
+		<Pane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent);">
+
+			<Button fx:id="btnAddNewPromotion" alignment="CENTER" layoutX="230.0" layoutY="365.0" onAction="#addNewPromotionHandler" prefHeight="70.0" prefWidth="340.0" style="-fx-background-radius: 300; -fx-border-radius: 300;" stylesheets="@buttonCSS.css" text="ADD A NEW PROMOTION" textFill="WHITE">
+				<font>
+					<Font name="Arial Rounded MT Bold" size="20.0" />
+				</font>
+			</Button>
+
+			<Button fx:id="btnActivatePromotion" alignment="CENTER" layoutX="247.0" layoutY="234.0" onAction="#getBtnActivatePromotion" prefHeight="70.0" prefWidth="310.0" style="-fx-background-radius: 300; -fx-border-radius: 300;" stylesheets="@buttonCSS.css" text="ACTIVATE PROMOTION" textFill="WHITE">
+				<font>
+					<Font name="Arial Rounded MT Bold" size="20.0" />
+				</font>
+			</Button>
+
+			<Button fx:id="btnLogout" alignment="CENTER" layoutX="14.0" layoutY="741.0" onAction="#logoutHandler" prefHeight="42.0" prefWidth="102.0" style="-fx-background-radius: 200; -fx-border-radius: 200;" stylesheets="@buttonCSS.css" text="BACK" textFill="WHITE">
+				<font>
+					<Font name="Berlin Sans FB" size="20.0" />
+				</font>
+			</Button>
+         <ImageView fitHeight="164.0" fitWidth="508.0" layoutX="182.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Images/promotionPic.png" />
+            </image>
+         </ImageView>
+         <Pane prefHeight="120.0" prefWidth="800.0">
+            <children>
+               <Text fx:id="txtSalesManager" fill="WHITE" layoutX="187.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME BACK, MANAGER">
+                  <font>
+                     <Font name="Arial Rounded MT Bold" size="30.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-14.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Images/logo%20final%20-%20yellow.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </Pane>
+         <ImageView fitHeight="64.0" fitWidth="102.0" layoutX="557.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Images/sale.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="79.0" fitWidth="102.0" layoutX="544.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Images/sale.png" />
+            </image>
+         </ImageView>
+
+		</Pane>
+	</children>
+</VBox>

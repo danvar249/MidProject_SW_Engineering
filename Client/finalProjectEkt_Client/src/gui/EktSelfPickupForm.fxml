@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="btnLocation" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="133.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="192.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remote Order For Self Pickup" wrappingWidth="462.3639221191406">
+               <font>
+                  <Font name="Amiri Regular" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="244.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for pickup location" textAlignment="CENTER" wrappingWidth="311.00390625">
+               <font>
+                  <Font name="Amiri Regular" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtLocation" layoutX="298.0" layoutY="199.0" prefHeight="39.0" prefWidth="204.0" promptText="location search">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnMozkin" layoutX="298.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="204.0" text="Kiryat Mozkin, Hahagana">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Text layoutX="244.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR select from mostly commonly used list" textAlignment="CENTER" wrappingWidth="311.00390625">
+               <font>
+                  <Font name="Amiri Regular" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnKarmiel" layoutX="298.0" layoutY="388.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="204.0" text="Karmiel, Kramim">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnJerusalem" layoutX="298.0" layoutY="443.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="204.0" text="Jerusalem">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnHaifa" layoutX="298.0" layoutY="495.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="204.0" text="Haifa, Horev">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTelAviv" layoutX="298.0" layoutY="546.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="204.0" text="Tel Aviv, Rotshild">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="14.0" layoutY="747.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="Back">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

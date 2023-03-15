@@ -1,0 +1,12 @@
+.text-field {
+    -fx-background-color:  linear-gradient(from 200px 0px to 200px 600px,transparent , INDIGO) , transparent , transparent;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-border-color: purple;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-radius: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: linear-gradient(from 200px 0px to 200px 600px,transparent , INDIGO) , transparent , transparent;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}

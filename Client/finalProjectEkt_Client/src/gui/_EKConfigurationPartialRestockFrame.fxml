@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ek_configuration._EKConfigurationPartialRestockController">
+   <children>
+      <Pane prefHeight="470.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1800px, #a837b4, transparent);">
+         <children>
+            <Text fx:id="txtWelcomeText" fill="WHITE" layoutX="153.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLEASE CHOOSE AN ORDER" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnFinishRestock" layoutX="328.0" layoutY="397.0" mnemonicParsing="false" onAction="#getBtnFinishRestock" prefHeight="21.0" prefWidth="144.0" stylesheets="@buttonCSS.css" text="FINISH" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+            </Button>
+            <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="314.0" layoutY="408.0" prefHeight="34.0" prefWidth="144.0" text="test" textAlignment="CENTER" visible="false" />
+            <Button fx:id="btnCancel" layoutX="14.0" layoutY="424.0" mnemonicParsing="false" onAction="#getBtnCancel" prefHeight="34.0" prefWidth="102.0" style="-fx-background-radius: 300; -fx-border-radius: 300;" stylesheets="@buttonCSS.css" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Button>
+            <TableView fx:id="tblProducts" layoutX="54.0" layoutY="123.0" prefHeight="264.0" prefWidth="693.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1800px, #a837b4, transparent);">
+              <columns>
+                <TableColumn fx:id="colProdName" prefWidth="168.0" text="Product Name" />
+                  <TableColumn fx:id="colCurrentStock" prefWidth="172.0" text="Current stock" />
+                  <TableColumn fx:id="colNewStock" prefWidth="192.0" text="New stock" />
+                  <TableColumn fx:id="colMaxStock" prefWidth="158.0" text="Max stock" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="173.0" fitWidth="175.0" layoutX="-21.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/logo%20final%20-%20yellow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

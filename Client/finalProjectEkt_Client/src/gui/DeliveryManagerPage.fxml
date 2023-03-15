@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeliveryManagerPageController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1800px, #a837b4, transparent);">
+         <children>
+            <Text fx:id="welcomeText" fill="WHITE" layoutX="172.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELIVERY MANAGEMENT">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font></Text>
+            <TableView id="deliveryTable" fx:id="deliveryTable" editable="true" layoutX="100.0" layoutY="100.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1800px, #a837b4, transparent);" stylesheets="@DeliveryManager.css">
+              <columns>
+                <TableColumn fx:id="tblOrderNumberColumn" prefWidth="137.0" text="Order Number" />
+                <TableColumn fx:id="tblDateReceivedColumn" prefWidth="140.0" text="Date Received" />
+                  <TableColumn fx:id="tblTimeColumn" prefWidth="170.0" text="Delivery Time" />
+                  <TableColumn fx:id="tblStatusColumn" prefWidth="150.0" styleClass="-fx-alignment: CENTER;" text="Status" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnBack" layoutX="9.0" layoutY="740.0" mnemonicParsing="false" onAction="#getBtnBack" prefHeight="50.0" prefWidth="130.0" style="-fx-background-radius: 300; -fx-border-radius: 300;" stylesheets="@buttonCSS.css" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="btnUpdate" layoutX="342.0" layoutY="719.0" mnemonicParsing="false" onAction="#getBtnUpdate" stylesheets="@buttonCSS.css" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="191.0" fitWidth="195.0" layoutX="-13.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/logo%20final%20-%20yellow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

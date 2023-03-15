@@ -1,0 +1,8 @@
+.button {
+	-fx-background-color: purple; 
+	-fx-border-color: white;
+	-fx-border-width: 3px;
+	-fx-border-radius: 3;
+	-fx-background-radius: 10;
+	-fx-font-color: white;
+}

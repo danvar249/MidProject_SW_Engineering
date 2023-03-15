@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EktRegionalManagerHomePageController">
+   <children>
+      <Pane prefHeight="155.0" prefWidth="805.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/logo%20final%20-%20yellow.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtManagerWelcome" fill="WHITE" layoutX="180.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi manager, glad you are back">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnLowStockAlerts" layoutX="654.0" layoutY="45.0" mnemonicParsing="false" onAction="#getBtnStockAlerts" stylesheets="@buttonCSS.css" text="ALERTS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Button fx:id="btnLogout" layoutX="14.0" layoutY="739.0" mnemonicParsing="false" onAction="#getLogoutBtn" style="-fx-border-color: white; -fx-background-color: purple; -fx-background-radius: 10; -fx-border-radius: 3; -fx-border-width: 3px; -fx-background-radius: 200; -fx-border-radius: 200;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font></Button>
+      <Pane layoutX="75.0" layoutY="155.0" prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent); -fx-border-color: white; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 10;">
+         <children>
+            <Button fx:id="btnReviewReports" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" onAction="#getBtnReviewReports" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: purple; -fx-border-color: white; -fx-border-width: 3px; -fx-background-radius: 10; -fx-border-radius: 3;" text="VIEW REPORTS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="20.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIEW MONTHLY REPORTS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="450.0" layoutY="155.0" prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent); -fx-border-color: white; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCEPT CUSTOMER REQUESTS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnAcceptCustomers" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" onAction="#getBtnAcceptCustomers" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: PURPLE; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 3; -fx-background-radius: 10;" text="ACCEPT CUSTOMERS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="75.0" layoutY="475.0" prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent); -fx-border-color: white; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="17.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MACHINE RESTOCK THRESHOLD">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnSetThreshold" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" onAction="#getBtnSetThreshold" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: purple; -fx-border-color: white; -fx-border-width: 3px; -fx-border-radius: 3; -fx-background-radius: 10;" text="SET THRESHOLD" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="450.0" layoutY="475.0" prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent); -fx-border-color: white; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="26.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CANCEL PENDING ORDERS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnCancelOrders" layoutX="50.0" layoutY="90.0" mnemonicParsing="false" onAction="#getBtnCancelOrders" prefHeight="70.0" prefWidth="200.0" stylesheets="@buttonCSS.css" text="CANCEL ORDERS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

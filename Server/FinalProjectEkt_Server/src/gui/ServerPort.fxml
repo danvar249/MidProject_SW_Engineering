@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="353.0" prefWidth="532.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1500px,#e6e6fa , INDIGO);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortController">
+   <children>
+      <Button fx:id="btnConnect" layoutX="18.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickConnectBtn" prefHeight="42.0" prefWidth="156.0" stylesheets="@buttonCSS.css" text="CONNECT" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <TextField fx:id="portxt" disable="true" layoutX="22.0" layoutY="33.0" stylesheets="@textfieldCSS.css" text="5555" />
+      <Button fx:id="btnExit" layoutX="414.0" layoutY="297.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="40.0" prefWidth="101.0" stylesheets="@buttonCSS.css" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <Label layoutX="25.0" layoutY="17.0" text="PORT">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="76.0" text="DATABASE USER">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <TextField fx:id="databaseUsernameTxt" layoutX="22.0" layoutY="98.0" onAction="#onEnter" stylesheets="@textfieldCSS.css" text="root" />
+      <Label layoutX="25.0" layoutY="152.0" text="DATABASE PASSWORD">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <TableView fx:id="clientsTable" layoutX="231.0" layoutY="17.0" prefHeight="118.0" prefWidth="284.0">
+        <columns>
+          <TableColumn fx:id="colClients" prefWidth="283.0" text="Clients" />
+        </columns>
+      </TableView>
+      <PasswordField fx:id="databasePasswdTxt" layoutX="22.0" layoutY="167.0" onAction="#onEnter" stylesheets="@textfieldCSS.css" text="whatdoesntkillyoumakesyoustronger" />
+      <Button fx:id="addUserToDB" disable="true" layoutX="231.0" layoutY="147.0" mnemonicParsing="false" onAction="#getAddUserToDbBtn" prefHeight="48.0" prefWidth="284.0" stylesheets="@buttonCSS.css" text="ADD USER TO DATABASE" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDisconnect" disable="true" layoutX="18.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickDisconnectBtn" prefHeight="42.0" prefWidth="156.0" stylesheets="@buttonCSS.css" text="Disconnect" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <TextArea fx:id="txtClients" editable="false" layoutX="231.0" layoutY="42.0" prefHeight="93.0" prefWidth="284.0" />
+      <ImageView fitHeight="140.0" fitWidth="130.0" layoutX="201.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1ab5823f-15e0-41b3-a6aa-0bff8242f2d4.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

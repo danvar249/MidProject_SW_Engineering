@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="335.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register a new customer" />
+            <TextField fx:id="txtName" layoutX="61.0" layoutY="100.0" />
+            <TextField fx:id="txtSurname" layoutX="61.0" layoutY="150.0" />
+            <TextField fx:id="txtEmail" layoutX="61.0" layoutY="200.0" />
+            <TextField fx:id="txtPhoneNumber" layoutX="61.0" layoutY="250.0" />
+            <TextField fx:id="txtCreditCard" layoutX="61.0" layoutY="300.0" />
+            <Text fill="RED" layoutX="220.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="220.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="219.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="219.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="220.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="61.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="61.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname" />
+            <Text layoutX="61.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail" />
+            <Text layoutX="61.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+            <Text layoutX="61.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card Number" />
+            <TextField fx:id="txtCVV" layoutX="251.0" layoutY="300.0" prefHeight="25.0" prefWidth="47.0" />
+            <Text layoutX="251.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV" />
+            <Text fill="RED" layoutX="308.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="53.0" fitWidth="47.0" layoutX="321.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/62936.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegisterCustomer" layoutX="342.0" layoutY="388.0" mnemonicParsing="false" text="Register Customer" />
+            <Text layoutX="30.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By registering as a subscriber, the customer agrees on receiving promotions and news about new items, and sales via SMS and Email.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="325.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generated Username: XXXX" />
+            <Text layoutX="327.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generated Password: XXXX" />
+            <CheckBox fx:id="cbRegisterSubscriber" layoutX="63.0" layoutY="336.0" mnemonicParsing="false" text="Register As A Subscriber? (optional)" />
+            <Button fx:id="btnBack" layoutX="14.0" layoutY="761.0" mnemonicParsing="false" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

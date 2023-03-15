@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="213.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Status Report">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="306.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For each machine">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <BarChart fx:id="barCharInventoryStatus" layoutX="7.0" layoutY="244.0" prefHeight="571.0" prefWidth="649.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Text fx:id="txtQuantity" layoutX="47.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum quantity for restocking:  4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

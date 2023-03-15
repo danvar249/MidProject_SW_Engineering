@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- 
+	private String firstName;
+	private String lastName;
+	private Integer id;
+	private String phoneNumber;
+	private String emailAddress;
+	private String creditCard;
+	private String username;
+	private String password;
+	-->
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(from -200px 0px to 0px 1400px, #a837b4, transparent);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EktServiceRepAddCustomerController">
+   <children>
+      <Button fx:id="btnAdd" layoutX="192.0" layoutY="692.0" mnemonicParsing="false" onAction="#getAddUserToDB" prefHeight="93.0" prefWidth="417.0" style="-fx-background-radius: 300; -fx-border-radius: 222;" stylesheets="@buttonCSS.css" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="34.0" />
+         </font></Button>
+      <TextField fx:id="txtUsername" layoutX="250.0" layoutY="130.0" prefHeight="25.0" prefWidth="300.0" promptText="Username" stylesheets="@textfieldCSS.css" />
+      <TextField fx:id="txtPassword" layoutX="250.0" layoutY="160.0" prefHeight="25.0" prefWidth="300.0" promptText="Password" stylesheets="@textfieldCSS.css" />
+      <TextField fx:id="txtID" layoutX="250.0" layoutY="261.0" prefHeight="25.0" prefWidth="300.0" promptText="User ID" stylesheets="@textfieldCSS.css" />
+      <TextField fx:id="txtFirstName" layoutX="249.0" layoutY="312.0" prefHeight="25.0" prefWidth="300.0" promptText="First name" stylesheets="@textfieldCSS.css" />
+      <TextField fx:id="txtLastName" layoutX="249.0" layoutY="342.0" prefHeight="25.0" prefWidth="300.0" promptText="Last name" stylesheets="@textfieldCSS.css" />
+      <TextField fx:id="txtPhoneNumber" layoutX="249.0" layoutY="392.0" prefHeight="25.0" prefWidth="300.0" promptText="Phone number" stylesheets="@textfieldCSS.css" />
+      <Text fx:id="lblStatus" fill="WHITE" layoutX="329.0" layoutY="678.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Warning">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtRole" disable="true" layoutX="234.0" layoutY="617.0" prefHeight="25.0" prefWidth="333.0" promptText="Role" text="Customer">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></TextField>
+      <Button fx:id="btnGoBack" layoutX="14.0" layoutY="738.0" mnemonicParsing="false" onAction="#getBtnGoBack" prefHeight="49.0" prefWidth="112.0" style="-fx-background-radius: 2222; -fx-border-radius: 222;" stylesheets="@buttonCSS.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Button>
+      <Label fx:id="lblUsername" layoutX="250.0" layoutY="185.0" prefHeight="25.0" prefWidth="324.0" textFill="RED" />
+      <Label fx:id="lblId" layoutX="250.0" layoutY="286.0" prefHeight="25.0" prefWidth="324.0" textFill="RED" />
+      <Label fx:id="lblName" layoutX="250.0" layoutY="368.0" prefHeight="25.0" prefWidth="324.0" textFill="RED" />
+      <Label fx:id="lblPhone" layoutX="250.0" layoutY="417.0" prefHeight="25.0" prefWidth="324.0" textFill="RED" />
+      <Label fx:id="lblEmail" layoutX="250.0" layoutY="467.0" prefHeight="32.0" prefWidth="324.0" textFill="RED" />
+      <Label fx:id="lblCreditCard" layoutX="250.0" layoutY="237.0" prefHeight="25.0" prefWidth="324.0" textFill="RED" />
+      <Pane prefHeight="120.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/logo%20final%20-%20yellow.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="176.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERT USER DETAILS" wrappingWidth="449.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="146.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="145.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="141.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="173.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER ID">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="106.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="145.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="250.0" layoutY="442.0" prefHeight="25.0" prefWidth="300.0" promptText="Email" stylesheets="@textfieldCSS.css" />
+      <Text fill="WHITE" layoutX="190.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCreditCard" layoutX="250.0" layoutY="212.0" prefHeight="25.0" prefWidth="300.0" promptText="Credit Card" stylesheets="@textfieldCSS.css" />
+      <Text fill="WHITE" layoutX="128.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREDIT CARD">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbLocation" layoutX="337.0" layoutY="519.0" prefWidth="150.0" promptText="Location" stylesheets="@comboboxCSS.css" />
+      <Text fill="WHITE" layoutX="240.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCATION">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblLocation" layoutX="238.0" layoutY="555.0" prefHeight="32.0" prefWidth="324.0" textFill="RED" />
+   </children>
+</AnchorPane>

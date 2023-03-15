@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="285.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Your Order">
+               <font>
+                  <Font name="Amiri Regular" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="169.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi &quot;customer name&quot;, We are happy to see you in">
+               <font>
+                  <Font name="Amiri Regular" size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblLocationName" layoutX="326.0" layoutY="231.0" text="&quot;location name&quot;">
+               <font>
+                  <Font name="Amiri Regular" size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="233.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please put your order number here">
+               <font>
+                  <Font name="Amiri Regular" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtOrderCode" layoutX="288.0" layoutY="351.0" promptText="order code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="lblForgotCode" layoutX="292.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: white;" text="I forgot my code" textAlignment="CENTER" />
+            <Button fx:id="btnSave" layoutX="357.0" layoutY="460.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="86.0" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="14.0" layoutY="747.0" mnemonicParsing="false" text="Back">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

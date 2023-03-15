@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<!-- 
+	private String firstName;
+	private String lastName;
+	private Integer id;
+	private String phoneNumber;
+	private String emailAddress;
+	private String creditCard;
+	private String username;
+	private String password;
+	-->
+
+<AnchorPane prefHeight="640.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TestSelectFromDBProductController">
+   <children>
+      <Text layoutX="83.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert user details" />
+      <Text fx:id="lblStatus" layoutX="200.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Waiting" />
+      <TableView fx:id="tblProducts" layoutX="23.0" layoutY="69.0" prefHeight="252.0" prefWidth="416.0">
+        <columns>
+            <TableColumn fx:id="pid" prefWidth="84.0" text="productID" />
+            <TableColumn fx:id="pname" prefWidth="84.0" text="productName" />
+            <TableColumn fx:id="pprice" prefWidth="84.0" text="price" />
+            <TableColumn fx:id="pcat" prefWidth="84.0" text="category" />
+            <TableColumn fx:id="psubcat" prefWidth="84.0" text="subcategory" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

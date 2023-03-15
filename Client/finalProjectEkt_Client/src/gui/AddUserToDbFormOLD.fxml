@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- 
+	private String firstName;
+	private String lastName;
+	private Integer id;
+	private String phoneNumber;
+	private String emailAddress;
+	private String creditCard;
+	private String username;
+	private String password;
+	-->
+
+<AnchorPane prefHeight="640.0" prefWidth="480.0" style="-fx-background-color: linear-gradient(from 0px 0px to 0px 1800px,#e6e6fa , INDIGO);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddUserToDbController">
+   <children>
+      <Text layoutX="113.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert user details">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font></Text>
+      <Button fx:id="btnAdd" layoutX="104.0" layoutY="553.0" mnemonicParsing="false" onAction="#getAddUserToDB" prefHeight="42.0" prefWidth="273.0" stylesheets="@buttonCSS.css" text="ADD TO DB" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <TextField fx:id="txtUsername" layoutX="118.0" layoutY="95.0" prefHeight="38.0" prefWidth="303.0" promptText="Username" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtPassword" layoutX="118.0" layoutY="145.0" prefHeight="38.0" prefWidth="303.0" promptText="Password" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtID" layoutX="118.0" layoutY="198.0" prefHeight="38.0" prefWidth="303.0" promptText="User ID" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtFirstName" layoutX="118.0" layoutY="245.0" prefHeight="38.0" prefWidth="303.0" promptText="First name" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtLastName" layoutX="118.0" layoutY="295.0" prefHeight="38.0" prefWidth="303.0" promptText="Last name" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtPhoneNumber" layoutX="118.0" layoutY="345.0" prefHeight="38.0" prefWidth="303.0" promptText="Phone number" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtEmail" layoutX="118.0" layoutY="395.0" prefHeight="38.0" prefWidth="303.0" promptText="Email" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtCreditCard" layoutX="118.0" layoutY="445.0" prefHeight="38.0" prefWidth="303.0" promptText="Credit Card" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Text fx:id="lblStatus" layoutX="335.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Waiting">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Text>
+      <TextField fx:id="txtRole" layoutX="118.0" layoutY="495.0" prefHeight="20.0" promptText="Role" stylesheets="@textfieldCSS.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone n.">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="127.0" fitWidth="91.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/ekrut.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="15.0" layoutY="589.0" mnemonicParsing="false" onAction="#getBtnBack" prefHeight="38.0" prefWidth="59.0" stylesheets="@buttonCSS.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

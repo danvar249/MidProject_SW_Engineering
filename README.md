@@ -1,5 +1,3 @@
-# FinalProjectEkt
-This time for real doe...
 
 Contains bare-boned version of server and client.
 Current capabilities:
@@ -14,19 +12,12 @@ Current capabilities:
 - Client can close the program using the "exit" button (X button is not properly mapped yet)
 - Client loads an (empty) login page for the Ekt system after connecting to server
 
-**Update - 25/12 Merry Christmas!**
-
-Added (by me or others):
 - Map[ServerClientRequestTypes -> IServerSideFunction]: a map from a request-type to an operation, used server-side to map client message to a function without a switch statement.
 - Similar map from database-operation to the operation itself. [Types: DatabaseOperation, IDatabaseAction]
 - Many UI pages for different stuff.
 
-Current functionality of this system (my branch):
+Current functionality of this system:
 - Server can be started and connected to database. Server can be re-started in an orgranized fashion.
-- Client can connect to server. (TODO: add a special login for "Touch simulation", ...)
+- Client can connect to server.
 - Client has a login page where data is compared, currently with columns in "systemuser" table which is too large.
 - Client can connect as Customer, and view an example page.
-
-TODO:
-Plenty, TBD.
-Seriously though, 
